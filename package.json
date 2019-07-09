@@ -5,8 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --colors"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
