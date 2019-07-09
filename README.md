@@ -1,3 +1,5 @@
+### This repository has been moved [here](https://github.com/RobCC/robcc/tree/master/packages/with-animation).
+
 # with-animation
 
 HOC that handles animation when mounting and unmounting a React component easily.
