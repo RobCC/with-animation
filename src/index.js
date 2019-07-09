@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 const withAnimation = WrappedComponent => {
   class _AnimatedComponent extends Component {
@@ -65,6 +67,14 @@ const withAnimation = WrappedComponent => {
   _AnimatedComponent.defaultProps = {
     animateOnLoad: true,
     defaultClass: ''
+  };
+
+  _AnimatedComponent.propTypes = {
+    mount: PropTypes.bool,
+    onMount: PropTypes.string,
+    onUnmount: PropTypes.string,
+    defaultClass: PropTypes.string,
+    animateOnLoad: PropTypes.bool
   };
 
   return _AnimatedComponent;
